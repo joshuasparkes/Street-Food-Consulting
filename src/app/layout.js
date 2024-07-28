@@ -22,22 +22,22 @@ export default function RootLayout({ children }) {
             <Image src="/logo.jpeg" alt="Logo" width={50} height={50} />
             <ul className="flex space-x-4">
               <li>
-                <Link href="/" className={`text-white ${pathname === "/" ? "border-b-2 border-white" : ""}`}>
+                <Link href="/" className={`text-white hover:text-gray-400 ${pathname === "/" ? "border-b-2 border-white" : ""}`}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className={`text-white ${pathname === "/contact" ? "border-b-2 border-white" : ""}`}>
+                <Link href="/contact" className={`text-white hover:text-gray-400 ${pathname === "/contact" ? "border-b-2 border-white" : ""}`}>
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/services" className={`text-white ${pathname === "/services" ? "border-b-2 border-white" : ""}`}>
+                <Link href="/services" className={`text-white hover:text-gray-400 ${pathname === "/services" ? "border-b-2 border-white" : ""}`}>
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/clients" className={`text-white ${pathname === "/clients" ? "border-b-2 border-white" : ""}`}>
+                <Link href="/clients" className={`text-white hover:text-gray-400 ${pathname === "/clients" ? "border-b-2 border-white" : ""}`}>
                   Clients
                 </Link>
               </li>
