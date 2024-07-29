@@ -1,16 +1,16 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import "./globals.css"; // Ensure you have global styles if needed
+import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import NavBar from "./NavBar";
 
-
+export const metadata = {
+  title: "Street Food Consulting",
+  description: "A brief description of your site.",
+  icons: {
+    icon: "/logo.jpeg",
+  },
+};
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-
   return (
     <html lang="en">
       <head>
@@ -20,55 +20,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <GoogleTagManager gtmId="GTM-M86LFMJW" />
-
       <body className="bg-black text-white h-screen flex flex-col">
-        <nav className="w-full bg-black p-4 flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <Image src="/logo.jpeg" alt="Logo" width={50} height={50} />
-            <ul className="flex space-x-4">
-              <li>
-                <Link
-                  href="/"
-                  className={`text-white hover:text-gray-400 ${
-                    pathname === "/" ? "border-b-2 border-white" : ""
-                  }`}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className={`text-white hover:text-gray-400 ${
-                    pathname === "/contact" ? "border-b-2 border-white" : ""
-                  }`}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className={`text-white hover:text-gray-400 ${
-                    pathname === "/services" ? "border-b-2 border-white" : ""
-                  }`}
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/clients"
-                  className={`text-white hover:text-gray-400 ${
-                    pathname === "/clients" ? "border-b-2 border-white" : ""
-                  }`}
-                >
-                  Clients
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <NavBar />
         <main className="flex-grow bg-black text-center flex justify-center items-center p-8">
           {children}
         </main>
