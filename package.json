@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^14.2.5",
     "emailjs-com": "^3.2.0",
+    "globby": "^14.0.2",
     "next": "^14.2.5",
     "react": "^18",
     "react-dom": "^18",

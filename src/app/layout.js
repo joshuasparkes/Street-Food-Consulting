@@ -6,13 +6,7 @@ import { usePathname } from "next/navigation";
 import "./globals.css"; // Ensure you have global styles if needed
 import { GoogleTagManager } from "@next/third-parties/google";
 
-// export const metadata = {
-//   title: "Street Food Consulting",
-//   description: "Start making and selling your own food for profit rapidly.",
-//   icons: {
-//     icon: "/logo.jpeg",
-//   },
-// };
+
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
