@@ -14,15 +14,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </head>
       <GoogleTagManager gtmId="GTM-M86LFMJW" />
-      <body className="bg-black text-white h-screen flex flex-col">
+      <body className="bg-black text-white h-screen grid grid-rows-[auto_1fr]">
         <NavBar />
-        <main className="flex-grow bg-black text-center flex justify-center items-center p-8">
+        <main className="bg-black text-center flex justify-center items-center p-8">
           {children}
         </main>
       </body>

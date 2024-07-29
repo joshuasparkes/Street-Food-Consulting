@@ -8,8 +8,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full bg-black p-4 flex items-center justify-between">
-      <div className="flex items-center space-x-4">
+    <nav className="w-full bg-black p-4 flex items-center justify-between h-20"> {/* Adjust height as needed */}
         <Image src="/logo.jpeg" alt="Logo" width={50} height={50} />
         <ul className="flex space-x-4">
           <li>
@@ -53,7 +52,6 @@ export default function NavBar() {
             </Link>
           </li>
         </ul>
-      </div>
     </nav>
   );
 }

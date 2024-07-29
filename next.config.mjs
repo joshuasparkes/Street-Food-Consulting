@@ -4,7 +4,7 @@ const nextConfig = {
       ignoreDuringBuilds: true,
     },
     images: {
-      domains: ['images.pexels.com'],
+      domains: ['images.pexels.com', 'encrypted-tbn0.gstatic.com'],
     },
   };
   

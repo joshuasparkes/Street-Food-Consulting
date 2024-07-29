@@ -3,27 +3,44 @@ import Image from "next/image";
 export default function Clients() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Row 1: Text then Image */}
-        <div className="order-1 flex mt-10 md:order-1">
-          <p className="text-3xl">
-            Over our time in street food the last 5 years Danny
-            has been an integral connection to our success. With a savvy
-            business mind and excessive knowledge about street food, he’s
-            successfully created multiple brands from the ground up. Having him
-            at the end of a phone has helped keep our business running smoothly.
-            With helpful advice on logistics to staffing issues to just day to
-            day running and motivation Danny has been an essential part of our
-            business growth. Tom, Stripclub Streetfood
-          </p>
-        </div>
-        <div className="order-2 md:order-2">
-          <Image
-            width={500}
-            height={50}
-            src="https://images.pexels.com/photos/2553651/pexels-photo-2553651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Client 1"
-          />
+      <div className="grid justify-start items-start grid-cols-1 gap-4">
+        <div className="order-1 h-full items-start justify-start flex flex-col md:flex-col md:order-1">
+          <div className="text-left">
+            <div className="flex mb-10 items-center gap-4">
+              <Image
+                width={100}
+                height={100}
+                src="/striplogo.jpg"
+                alt="Client 1"
+                className="w-20 h-20 shadow-white shadow-sm rounded-md object-cover"
+              />
+              <p className="text-4xl mx-4 font-semibold">
+                Stripclub Streetfood
+              </p>
+            </div>
+            <p className="text-lg">
+              Over our time in street food the last 5 years Danny has been an
+              integral connection to our success. With a savvy business mind and
+              excessive knowledge about street food, he’s successfully created
+              multiple brands from the ground up. Having him at the end of a
+              phone has helped keep our business running smoothly. With helpful
+              advice on logistics to staffing issues to just day to day running
+              and motivation Danny has been an essential part of our business
+              growth.
+            </p>
+            <p className="font-signature text-4xl mt-4 mb-6">
+              Tom, Stripclub Streetfood
+            </p>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <Image
+              width={200}
+              height={200}
+              src="/stripimage.webp"
+              alt="Client 1"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
 
         {/* Row 2: Image then Text */}
@@ -51,7 +68,7 @@ export default function Clients() {
             alt="Client 3"
           />
         </div> */}
-      </div> 
+      </div>
     </div>
   );
 }

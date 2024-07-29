@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,9 +17,13 @@
   }
 }
 
+.font-signature {
+  font-family: 'Dancing Script', cursive;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -34,3 +37,4 @@ body {
     text-wrap: balance;
   }
 }
+
