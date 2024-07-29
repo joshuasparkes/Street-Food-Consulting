@@ -4,14 +4,14 @@ export default function Services() {
   return (
     <div className="flex flex-col justify-center items-center gap-4">
       <Image src="/logo.jpeg" alt="Logo" width={300} height={300} />
-      <div className="text-3xl h-screen">
+      <div className="md:text-3xl lg:text-3xl text-lg h-screen">
         Our consulting services provide the tools and knowledge you need to
         thrive.
       </div>
-      <div className="text-3xl h-screen">
+      <div className="md:text-3xl lg:text-3xl text-lg h-screen">
         Start your journey with us and see your business flourish!
       </div>
-      <div className="text-2xl h-screen">
+      <div className="md:text-3xl lg:text-3xl text-lg h-screen">
         <ul className="flex flex-col gap-4">
           <li>Assess the viability of your street food business idea.</li>
           <li>

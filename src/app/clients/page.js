@@ -18,7 +18,7 @@ export default function Clients() {
                 Stripclub Streetfood
               </p>
             </div>
-            <p className="text-lg">
+            <div className="md:text-lg lg:text-lg text-sm">
               Over our time in street food the last 5 years Danny has been an
               integral connection to our success. With a savvy business mind and
               excessive knowledge about street food, he’s successfully created
@@ -27,8 +27,8 @@ export default function Clients() {
               advice on logistics to staffing issues to just day to day running
               and motivation Danny has been an essential part of our business
               growth.
-            </p>
-            <p className="font-signature text-4xl mt-4 mb-6">
+            </div>
+            <p className="font-signature md:text-4xl text-2xl mt-4 mb-6">
               Tom, Stripclub Streetfood
             </p>
           </div>

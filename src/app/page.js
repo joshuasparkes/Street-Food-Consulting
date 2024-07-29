@@ -25,23 +25,23 @@ export default function Home() {
       </Head>
       <div className="flex flex-col justify-center items-center gap-4">
         <Image src="/logo.jpeg" alt="Logo" width={300} height={300} />
-        <div className="text-3xl h-screen">
+        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
           I started my streetfood business from scratch with no experience and
           without knowing anyone else in the trade who i could ask for advice.
         </div>
-        <div className="text-3xl h-screen">
+        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
           I made so many mistakes along the way and this is where i can help.
           Basically ive been there seen it done it.{" "}
         </div>
-        <div className="text-3xl h-screen">
+        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
           We work with clients to help get their ideas/dreams off the ground and
           to market with the least possible risk whilst making profit.
         </div>{" "}
-        <div className="text-3xl h-screen">
+        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
           We work close with event organisers, equipment, food & packaging
           suppliers and many of the top streetfood traders in the country.
         </div>
-        <div className="text-3xl h-screen">
+        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
           Sourcing the best yet most cost efficient items.
         </div>
       </div>
