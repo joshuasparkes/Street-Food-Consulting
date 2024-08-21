@@ -45,9 +45,9 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            href="/services"
+            href="/#services"
             className={`text-white hover:border-b hover:border-gray-300 ${
-              pathname === "/services" ? "border-b border-white" : ""
+              pathname === "/#services" ? "border-b border-white" : ""
             }`}
           >
             Services

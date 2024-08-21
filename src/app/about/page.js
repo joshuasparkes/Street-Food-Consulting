@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-center items-start gap-4 mx-4 min-h-screen">
+    <div className="flex w-full md:w-2/3 items-center flex-col justify-center gap-4 mx-4 min-h-screen">
       <h1 className='text-3xl font-bold'>About Streetfood Consulting</h1>
       <div className='border rounded-md p-6 flex flex-col gap-4'>
       <div className="md:text-base lg:text-base text-base text-left">

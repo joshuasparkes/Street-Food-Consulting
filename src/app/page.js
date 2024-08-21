@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import About from "./about/page";
 import Contact from "./contact/page";
+import Services from "./services/page";
 
 export default function Home() {
   useEffect(() => {
@@ -46,8 +47,11 @@ export default function Home() {
             Get Started{" "}
             <FontAwesomeIcon className="ml-2" icon={faChevronCircleRight} />
           </Link>
-          <div id="about">
+          <div className='w-full flex justify-center items-center' id="about">
             <About />
+          </div>
+          <div className='w-full flex justify-center items-center'  id="services">
+            <Services />
           </div>
           <div id="contact">
             <Contact />

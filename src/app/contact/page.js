@@ -49,11 +49,12 @@ export default function Contact() {
       <h1 className="text-4xl w-3/4 font-bold mb-4">Get in Touch</h1>
       <p className="text-lg mb-8 w-3/4  text-center">
         Ready to take your street food business to the next level? Book a free
-        consultation with our experts today! Fill out the form below, and we&apos;ll
-        get back to you as soon as possible to schedule your appointment.
+        consultation with our experts today! Fill out the form below, and
+        we&apos;ll get back to you as soon as possible to schedule your
+        appointment.
       </p>
       <form
-        className="text-lg border rounded-md p-4 w-full md:w-1/2 flex flex-col gap-4 "
+        className="text-lg border rounded-md p-4 w-full md:w-1/2 mb-4 flex flex-col gap-4 "
         onSubmit={handleSubmit}
       >
         <div className="flex flex-row gap-2 w-full">
@@ -77,7 +78,7 @@ export default function Contact() {
           />
         </div>
         <button
-          className="border-black text-black bg-yellow-300 rounded-sm border-4 p-2 hover:bg-white hover:text-black"
+          className="shadow-yellow-400 shadow-sm text-black bg-yellow-300 rounded-sm  p-2 hover:bg-white hover:text-black"
           type="submit"
         >
           Submit
@@ -85,18 +86,21 @@ export default function Contact() {
       </form>
       {error && <p style={{ color: "red" }}>{error}</p>}
       {success && <p style={{ color: "green" }}>{success}</p>}
-      <div className="flex">
-        <div className="border hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 m-4">
+      <div className="flex w-full md:w-1/2">
+        <a
+          href="tel:+447903223709" // Replace with your actual phone number
+          className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 mr-4"
+        >
           <FontAwesomeIcon icon={faPhone} />
-          <p>Call on</p>
-          <p className='text-blue-300 underline'>+44 7902 223709</p>
-        </div>
-        <div className="border hover:bg-slate-900 cursor-pointer rounded-md   py-2 px-4 m-4">
+          <p className="text-blue-300 underline">Call us</p>
+        </a>
+        <a
+          href="mailto:hello@streetfoodconsulting.co.uk"
+          className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 ml-4"
+        >
           <FontAwesomeIcon icon={faEnvelope} />
-
-          <p>or mail</p>
-          <p className='text-blue-300 underline text-xs'>info@streetfoodconsulting.co.uk</p>
-        </div>
+          <p className="text-blue-300 underline">Send Email</p>
+        </a>
       </div>
     </div>
   );

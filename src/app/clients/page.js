@@ -44,30 +44,38 @@ export default function Clients() {
         </div>
 
         {/* Row 2: Image then Text */}
-        {/* <div className="order-4 md:order-3">
-          <Image
-            width={500}
-            height={50}
-            src="https://images.pexels.com/photos/1755691/pexels-photo-1755691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Client 2"
-          />
-        </div>
-        <div className="order-3 md:order-4">
-          <p>Client 2 description...</p>
-        </div> */}
+        <div className="order-2 h-full items-start justify-start mt-20 flex flex-col md:flex-col md:order-2">
+          <div className="text-left">
+            <div className="flex mb-10 items-center gap-4">
+              <Image
+                width={100}
+                height={100}
+                src="/striplogo.jpg"
+                alt="Client 1"
+                className="w-20 h-20 shadow-white shadow-sm rounded-md object-cover"
+              />
+              <p className="text-4xl mx-4 font-semibold">
+              Cajun Soul               </p>
+            </div>
+            <div className="md:text-lg lg:text-lg text-sm">
+            Working with Streetfood Consultancy has been a game-changer for my business. Their innovative solutions have set us apart in the market.
 
-        {/* Row 3: Text then Image */}
-        {/* <div className="order-5 md:order-5">
-          <p>Client 3 description...</p>
+
+            </div>
+            <p className="font-signature md:text-4xl text-2xl mt-4 mb-6">
+              Charlie, Cajun Soul
+            </p>
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <Image
+              width={200}
+              height={200}
+              src="/cajunimage.png"
+              alt="Client 1"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
-        <div className="order-6 md:order-6">
-          <Image
-            width={500}
-            height={50}
-            src="https://images.pexels.com/photos/4551907/pexels-photo-4551907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Client 3"
-          />
-        </div> */}
       </div>
     </div>
   );
