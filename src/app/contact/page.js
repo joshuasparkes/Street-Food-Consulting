@@ -91,15 +91,17 @@ export default function Contact() {
           href="tel:+447903223709" // Replace with your actual phone number
           className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 mr-4"
         >
-          <FontAwesomeIcon icon={faPhone} />
+          <FontAwesomeIcon width="16" icon={faPhone} />
           <p className="text-blue-300 underline">Call us</p>
+          <p className='text-xs mt-2'>+44 790 322 3709</p>
         </a>
         <a
           href="mailto:hello@streetfoodconsulting.co.uk"
           className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 ml-4"
         >
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon width="16" icon={faEnvelope} />
           <p className="text-blue-300 underline">Send Email</p>
+          <p className='text-xs mt-2'>hello@streetfoodconsulting.co.uk</p>
         </a>
       </div>
     </div>

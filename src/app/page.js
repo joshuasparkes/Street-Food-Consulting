@@ -29,8 +29,7 @@ export default function Home() {
         <title>Street Food Consulting</title>
         <link rel="icon" href="/logo.jpeg" />
       </Head>
-      <div className="background-image">
-        <div className="background-overlay"></div>
+      <div>
         <div className="content flex pt-8 flex-col justify-center items-center gap-4">
           <Image className='rounded-full' src="/logo.jpeg" alt="Logo" width={200} height={200} />
           <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold">
@@ -41,11 +40,11 @@ export default function Home() {
             food business.
           </p>
           <Link
-            className="bg-yellow-400 text-black px-6 py-3 mb-12 rounded-lg text-base font-semibold hover:bg-yellow-600 transition duration-300"
+            className="bg-yellow-400 flex items-center text-black px-6 py-3 mb-12 rounded-lg text-base font-semibold hover:bg-yellow-600 transition duration-300"
             href="/#contact"
           >
             Get Started{" "}
-            <FontAwesomeIcon className="ml-2" icon={faChevronCircleRight} />
+            <FontAwesomeIcon width="16" className="ml-2" icon={faChevronCircleRight} />
           </Link>
           <div className='w-full flex justify-center items-center' id="about">
             <About />

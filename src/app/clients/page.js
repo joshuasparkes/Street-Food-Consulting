@@ -50,17 +50,18 @@ export default function Clients() {
               <Image
                 width={100}
                 height={100}
-                src="/striplogo.jpg"
+                src="/cajunlogo.webp"
                 alt="Client 1"
                 className="w-20 h-20 shadow-white shadow-sm rounded-md object-cover"
               />
-              <p className="text-4xl mx-4 font-semibold">
-              Cajun Soul               </p>
+              <p className="text-4xl mx-4 font-semibold">Cajun Soul </p>
             </div>
             <div className="md:text-lg lg:text-lg text-sm">
-            Working with Streetfood Consultancy has been a game-changer for my business. Their innovative solutions have set us apart in the market.
-
-
+              I hooked up with SC when I first had the idea to start a
+              streetfood business as I was aware that their experience within
+              this sector was second to none. A year later and the business is
+              flourishing and profitable. We have done multiple big events and
+              also have various residencies.
             </div>
             <p className="font-signature md:text-4xl text-2xl mt-4 mb-6">
               Charlie, Cajun Soul
