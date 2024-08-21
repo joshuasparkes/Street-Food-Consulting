@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 export const metadata = {
   title: "Street Food Consulting",
-  description: "A brief description of your site.",
+  description: "Get your streetfood business off the ground rapidly.",
   icons: {
     icon: "/logo.jpeg",
   },
