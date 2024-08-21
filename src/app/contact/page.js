@@ -49,11 +49,11 @@ export default function Contact() {
       <h1 className="text-4xl w-3/4 font-bold mb-4">Get in Touch</h1>
       <p className="text-lg mb-8 w-3/4  text-center">
         Ready to take your street food business to the next level? Book a free
-        consultation with our experts today! Fill out the form below, and we'll
+        consultation with our experts today! Fill out the form below, and we&apos;ll
         get back to you as soon as possible to schedule your appointment.
       </p>
       <form
-        className="text-lg border rounded-md p-4 w-1/2 flex flex-col gap-4 "
+        className="text-lg border rounded-md p-4 w-full md:w-1/2 flex flex-col gap-4 "
         onSubmit={handleSubmit}
       >
         <div className="flex flex-row gap-2 w-full">
@@ -86,16 +86,16 @@ export default function Contact() {
       {error && <p style={{ color: "red" }}>{error}</p>}
       {success && <p style={{ color: "green" }}>{success}</p>}
       <div className="flex">
-        <div className="border hover:bg-slate-900 cursor-pointer rounded-md   py-2 px-4 m-4">
+        <div className="border hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 m-4">
           <FontAwesomeIcon icon={faPhone} />
           <p>Call on</p>
           <p className='text-blue-300 underline'>+44 7902 223709</p>
         </div>
-        <div className="border hover:bg-slate-900 cursor-pointer rounded-md  py-2 px-4 m-4">
+        <div className="border hover:bg-slate-900 cursor-pointer rounded-md   py-2 px-4 m-4">
           <FontAwesomeIcon icon={faEnvelope} />
 
           <p>or mail</p>
-          <p className='text-blue-300 underline'>info@streetfoodconsulting.co.uk</p>
+          <p className='text-blue-300 underline text-xs'>info@streetfoodconsulting.co.uk</p>
         </div>
       </div>
     </div>

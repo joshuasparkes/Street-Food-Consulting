@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <GoogleTagManager gtmId="GTM-M86LFMJW" />
       <body className="bg-black text-white h-screen grid grid-rows-[auto_1fr]">
         <NavBar />
-        <main className="bg-black text-center flex justify-center items-center p-8">
+        <main className="bg-black text-center flex justify-center items-center px-8 pb-8">
           {children}
         </main>
         <Footer />

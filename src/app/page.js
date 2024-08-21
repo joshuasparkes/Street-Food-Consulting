@@ -28,27 +28,30 @@ export default function Home() {
         <title>Street Food Consulting</title>
         <link rel="icon" href="/logo.jpeg" />
       </Head>
-      <div className="flex flex-col justify-center items-center gap-4">
-        <Image src="/logo.jpeg" alt="Logo" width={200} height={200} />
-        <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold">
-          Start Your Street Food Business Today
-        </h1>
-        <p className="text-sm text-slate-300 md:text-base lg:text-base mb-8">
-          Expert advice and support to help you launch and grow your street food
-          business.
-        </p>
-        <Link
-          className="bg-yellow-400 text-black px-6 py-3 mb-12 rounded-lg text-base font-semibold hover:bg-yellow-600 transition duration-300"
-          href="/#contact"
-        >
-          Get Started{" "}
-          <FontAwesomeIcon className="ml-2" icon={faChevronCircleRight} />
-        </Link>
-        <div id="about">
-          <About />
-        </div>
-        <div id="contact">
-          <Contact />
+      <div className="background-image">
+        <div className="background-overlay"></div>
+        <div className="content flex pt-8 flex-col justify-center items-center gap-4">
+          <Image className='rounded-full' src="/logo.jpeg" alt="Logo" width={200} height={200} />
+          <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold">
+            Start Your Street Food Business Today
+          </h1>
+          <p className="text-sm text-slate-300 md:text-base lg:text-base mb-8">
+            Expert advice and support to help you launch and grow your street
+            food business.
+          </p>
+          <Link
+            className="bg-yellow-400 text-black px-6 py-3 mb-12 rounded-lg text-base font-semibold hover:bg-yellow-600 transition duration-300"
+            href="/#contact"
+          >
+            Get Started{" "}
+            <FontAwesomeIcon className="ml-2" icon={faChevronCircleRight} />
+          </Link>
+          <div id="about">
+            <About />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faDollar, faLightbulb, faList, faMap, faPeopleArrows, faPerson, faPhone, faPlus, faStore } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,16 +20,42 @@ export default function Services() {
       <div className="mt-4 border rounded-md p-2">
         <ul className="flex flex-col gap-2">
           <p className="text-xl font-semibold">Service Menu</p>
-          <li className='flex text-sm'><FontAwesomeIcon icon={faLightbulb}/>Assess the viability of your street food business idea.</li>
-          <li>
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faLightbulb} />
+            Assess the viability of your street food business idea.
+          </li>
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faMap} />
             Develop a detailed business plan including market analysis, business
             model, and financial projections.
           </li>
-          <li>Brand Development</li> <li> Menu Development </li>{" "}
-          <li> Operational Set up (Equipment, Events, H+S Compliance) </li>
-          <li>Financial Management</li>
-          <li>Marketing Strategy </li> <li> Staff Growth </li>{" "}
-          <li>Ongoing Support & Consultation</li>
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faPerson} />
+            Brand Development
+          </li>{" "}
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faList} /> Menu
+            Development{" "}
+          </li>{" "}
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faPlus} /> Operational
+            Set up (Equipment, Events, H+S Compliance){" "}
+          </li>
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faDollar} />
+            Financial Management
+          </li>
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faStore} />
+            Marketing Strategy{" "}
+          </li>{" "}
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faPeopleArrows} /> Staff Growth{" "}
+          </li>{" "}
+          <li className="flex items-center text-sm">
+            <FontAwesomeIcon width="16" className="mr-2" icon={faPhone} />
+            Ongoing Support & Consultation
+          </li>
         </ul>
       </div>
     </div>

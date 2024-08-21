@@ -30,7 +30,7 @@ export default function NavBar() {
               pathname === "/#about" ? "border-b border-white" : ""
             }`}
           >
-            About Us
+            About
           </Link>
         </li>
         <li>

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-center items-start gap-4 min-h-screen">
+    <div className="flex flex-col justify-center items-start gap-4 mx-4 min-h-screen">
       <h1 className='text-3xl font-bold'>About Streetfood Consulting</h1>
-      <div className='border rounded-md p-12 flex flex-col gap-4'>
+      <div className='border rounded-md p-6 flex flex-col gap-4'>
       <div className="md:text-base lg:text-base text-base text-left">
           I started my streetfood business from scratch with no experience and
           without knowing anyone else in the trade who i could ask for advice.

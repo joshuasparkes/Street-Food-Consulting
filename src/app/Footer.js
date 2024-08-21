@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="mb-4 rounded-full md:mb-0">
           <Image src="/logo.jpeg" className='rounded-full' alt="Logo" width={50} height={50} />
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col items-center md:flex-row gap-4">
           <Link href="/">
             Home
           </Link>
