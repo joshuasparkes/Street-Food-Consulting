@@ -2,6 +2,11 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
+import About from "./about/page";
+import Contact from "./contact/page";
 
 export default function Home() {
   useEffect(() => {
@@ -24,25 +29,26 @@ export default function Home() {
         <link rel="icon" href="/logo.jpeg" />
       </Head>
       <div className="flex flex-col justify-center items-center gap-4">
-        <Image src="/logo.jpeg" alt="Logo" width={300} height={300} />
-        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
-          I started my streetfood business from scratch with no experience and
-          without knowing anyone else in the trade who i could ask for advice.
+        <Image src="/logo.jpeg" alt="Logo" width={200} height={200} />
+        <h1 className="text-2xl md:text-5xl lg:text-5xl font-bold">
+          Start Your Street Food Business Today
+        </h1>
+        <p className="text-sm text-slate-300 md:text-base lg:text-base mb-8">
+          Expert advice and support to help you launch and grow your street food
+          business.
+        </p>
+        <Link
+          className="bg-yellow-400 text-black px-6 py-3 mb-12 rounded-lg text-base font-semibold hover:bg-yellow-600 transition duration-300"
+          href="/#contact"
+        >
+          Get Started{" "}
+          <FontAwesomeIcon className="ml-2" icon={faChevronCircleRight} />
+        </Link>
+        <div id="about">
+          <About />
         </div>
-        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
-          I made so many mistakes along the way and this is where i can help.
-          Basically ive been there seen it done it.{" "}
-        </div>
-        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
-          We work with clients to help get their ideas/dreams off the ground and
-          to market with the least possible risk whilst making profit.
-        </div>{" "}
-        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
-          We work close with event organisers, equipment, food & packaging
-          suppliers and many of the top streetfood traders in the country.
-        </div>
-        <div className="md:text-3xl lg:text-3xl text-lg h-screen">
-          Sourcing the best yet most cost efficient items.
+        <div id="contact">
+          <Contact />
         </div>
       </div>
     </>

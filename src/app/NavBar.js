@@ -8,7 +8,7 @@ export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-full bg-black p-4 flex items-center justify-between h-20">
+    <nav className="w-full text-xs md:text-base lg:text-base bg-black p-4 flex items-center justify-between h-20">
       {" "}
       {/* Adjust height as needed */}
       <Image src="/logo.jpeg" alt="Logo" width={50} height={50} />
@@ -16,8 +16,8 @@ export default function NavBar() {
         <li>
           <Link
             href="/"
-            className={`text-white hover:font-semibold ${
-              pathname === "/" ? "border-b-2 border-white" : ""
+            className={`text-white hover:border-b hover:border-gray-300 ${
+              pathname === "/" ? "border-b border-white" : ""
             }`}
           >
             Home
@@ -25,9 +25,19 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            href="/contact"
-            className={`text-white hover:font-semibold ${
-              pathname === "/contact" ? "border-b-2 border-white" : ""
+            href="/#about"
+            className={`text-white hover:border-b hover:border-gray-300 ${
+              pathname === "/#about" ? "border-b border-white" : ""
+            }`}
+          >
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/#contact"
+            className={`text-white hover:border-b hover:border-gray-300 ${
+              pathname === "/#contact" ? "border-b border-white" : ""
             }`}
           >
             Contact
@@ -36,8 +46,8 @@ export default function NavBar() {
         <li>
           <Link
             href="/services"
-            className={`text-white hover:font-semibold ${
-              pathname === "/services" ? "border-b-2 border-white" : ""
+            className={`text-white hover:border-b hover:border-gray-300 ${
+              pathname === "/services" ? "border-b border-white" : ""
             }`}
           >
             Services
@@ -46,8 +56,8 @@ export default function NavBar() {
         <li>
           <Link
             href="/clients"
-            className={`text-white hover:font-semibold ${
-              pathname === "/clients" ? "border-b-2 border-white" : ""
+            className={`text-white hover:border-b hover:border-gray-300 ${
+              pathname === "/clients" ? "border-b border-white" : ""
             }`}
           >
             Clients

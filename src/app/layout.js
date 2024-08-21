@@ -1,6 +1,7 @@
 import "./globals.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export const metadata = {
   title: "Street Food Consulting",
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <main className="bg-black text-center flex justify-center items-center p-8">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
