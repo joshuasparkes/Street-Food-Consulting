@@ -121,10 +121,10 @@ export default function Contact() {
         </form>
         {error && <p style={{ color: "red" }}>{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
-        <div className="flex w-full md:w-1/2">
+        <div className="flex w-full items-center justify-center flex-col gap-4 md:flex-row lg:flex-row md:w-1/2">
           <a
             href="tel:+447903223709" // Replace with your actual phone number
-            className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 mr-4"
+            className="border bg-black shadow-white shadow-md w-full hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 "
           >
             <FontAwesomeIcon width="16" icon={faPhone} />
             <p className="text-blue-300 underline">Call us</p>
@@ -132,7 +132,7 @@ export default function Contact() {
           </a>
           <a
             href="mailto:hello@streetfoodconsulting.co.uk"
-            className="border bg-black shadow-white shadow-md w-1/2 hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 ml-4"
+            className="border bg-black shadow-white shadow-md w-full hover:bg-slate-900 cursor-pointer rounded-md py-2 px-4 mt-4 "
           >
             <FontAwesomeIcon width="16" icon={faEnvelope} />
             <p className="text-blue-300 underline">Send Email</p>
