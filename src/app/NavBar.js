@@ -23,7 +23,7 @@ export default function NavBar() {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             href="/#about"
             className={`text-white hover:border-b hover:border-gray-300 ${
@@ -32,7 +32,7 @@ export default function NavBar() {
           >
             About
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             href="/#contact"
